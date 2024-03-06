@@ -33,7 +33,10 @@ html {
     inset: 0;
     margin: 125px auto;
     border: 3px solid #EF332E;
+    background-image: url(./images/moran.jpg);
+    background-size: cover;
 }
+
 
 section {
     margin-top: 125px;
@@ -137,19 +140,19 @@ footer>h2 {
     direction: rtl;
     color: black;
     margin: 0 15px;
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 @media screen and (min-width:1000px) {
     .cover {
         width: 100%;
         height: 550px;
-        border-bottom: 3px solid #3DBDA4;
+        border-bottom: 3px solid #EF332E;
     }
 
     .profile {
         margin: 425px auto;
-        border: 3px solid #3DBDA4;
+        border: 3px solid #EF332E;
     }
 
     .map {
