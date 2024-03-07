@@ -22,6 +22,17 @@ html {
     width: 100%;
     height: 250px;
     border-bottom: 3px solid #EF332E;
+    max-width: 1000px;
+}
+
+@keyframes slide {
+    from {
+        transform: translatex(-150%);
+    }
+
+    to {
+        transform: translatex(0);
+    }
 }
 
 .profile {
@@ -35,10 +46,14 @@ html {
     border: 3px solid #EF332E;
     background-image: url(./images/moran.jpg);
     background-size: cover;
+    transform: rotate (30deg);
+    animation: slide 3s ease;
 }
 
 
+
 section {
+    width: 85%;
     margin-top: 125px;
 
 }
@@ -61,7 +76,8 @@ section>div>img {
     src: url(./Heebo/static/Heebo-Black.ttf);
 }
 
-section>div>h1 {
+h1 {
+    width: 100%;
     font-family: "Heebo-Black";
     text-align: center;
     font-size: 3em;
@@ -72,7 +88,8 @@ section>div>h1 {
     src: url(./Heebo/static/Heebo-Regular.ttf);
 }
 
-section h2 {
+h2 {
+
     font-family: "Heebo-Regular";
     text-align: center;
     font-size: 1.5em;
@@ -121,6 +138,27 @@ iframe {
     border-radius: 15px;
 }
 
+.reviwes,
+.about {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+
+}
+
+.bold {
+
+    font-family: "Heebo-Black";
+}
+
 .QR {
     width: 85%;
 }
@@ -136,12 +174,16 @@ footer {
 }
 
 footer>h2 {
+
     font-family: "Heebo-Black";
     direction: rtl;
     color: black;
-    margin: 0 15px;
+    margin: 0 15px !important;
     font-size: 1em;
 }
+
+
+
 
 @media screen and (min-width:1000px) {
     .cover {
@@ -153,6 +195,11 @@ footer>h2 {
     .profile {
         margin: 425px auto;
         border: 3px solid #EF332E;
+    }
+
+    h1,
+    h2 {
+        max-width: 950px;
     }
 
     .map {
