@@ -149,8 +149,9 @@ iframe {
 }
 
 .circle {
-    width: 250px;
-    height: 250px;
+    width: 75px;
+    height: 75px;
+    margin: 25px auto;
 
 }
 
