@@ -8,18 +8,25 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-image: url(./images/IMG_6879.JPG);
+    background-size: contain;
+
+}
+
 
 .container {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    color: white;
 }
 
 .cover {
-    width: 100%;
+    width: 100vw;
     height: 250px;
     border-bottom: 3px solid black;
     max-width: 1000px;
@@ -165,7 +172,7 @@ iframe {
 }
 
 footer {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -178,7 +185,7 @@ footer>h2 {
 
     font-family: "Heebo-Black";
     direction: rtl;
-    color: black;
+    color: white;
     margin: 0 15px !important;
     font-size: 1em;
 }
